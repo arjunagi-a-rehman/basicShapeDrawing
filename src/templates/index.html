@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes Drawing App</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+            cursor: crosshair; /* Change cursor to crosshair when hovering over canvas */
+        }
+        .container {
+            position: relative;
+        }
+        .btn-container {
+            position: absolute;
+            top: 10px; /* Adjust as needed */
+            left: 10px; /* Adjust as needed */
+        }
+        .btn {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="btn-container">
+            <button class="btn" onclick="setType('Circle')">Circle</button>
+            <button class="btn" onclick="setType('Rectangle')">Rectangle</button>
+        </div>
+        <canvas id="myCanvas" width="800" height="600"></canvas>
+        
+    </div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
