@@ -22,7 +22,7 @@ Build Planner is a web application that allows users to create building plans us
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/arjunagi-a-rehman/basicShapeDrawing.git
    ```
 
 2. **Install dependencies:**
